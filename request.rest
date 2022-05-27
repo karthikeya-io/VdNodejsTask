@@ -1,0 +1,116 @@
+POST http://localhost:3000/api/signup
+Content-Type: application/json
+
+{
+    "email": "karthikeyabethu01@gmail.com",
+    "password": "12345"
+}
+
+###
+
+POST http://localhost:3000/api/signin 
+Content-Type: application/json
+
+{
+    "email": "karthikeyabethu01@gmail.com",
+    "password": "12345"
+}
+
+###
+
+GET  http://localhost:3000/api/signout
+
+
+###
+POST http://localhost:3000/api/contact/add
+Content-Type: application/json
+
+{
+    "firstname": "karthikeya",
+    "lastname": "Bethu",
+    "phonenumber": 9492484369,
+    "addressline1": "address line 1 test",
+    "addressline2": "address line 2 test",
+    "city": "test city",
+    "state": "test state",
+    "pincode": 500000
+}
+
+
+###
+
+POST http://localhost:3000/api/contact/addbulk
+Content-Type: application/json
+
+{
+    "contacts": [
+        {
+            "firstname": "Test fname 0",
+            "lastname": "Test lname 0",
+            "phonenumber": 9492484369,
+            "addressline1": "address line 1 test",
+            "addressline2": "address line 2 test",
+            "city": "test city",
+            "state": "test state",
+            "pincode": 520000
+        },
+        {
+            "firstname": "Test fname 1",
+            "lastname": "Test lname 1",
+            "phonenumber": 9492484369,
+            "addressline1": "address line 1 test",
+            "addressline2": "address line 2 test",
+            "city": "test city",
+            "state": "test state",
+            "pincode": 500000
+        },
+        {
+            "firstname": "Test fname 2",
+            "lastname": "Test lname 2",
+            "phonenumber": 9492484369,
+            "addressline1": "address line 1 test",
+            "addressline2": "address line 2 test",
+            "city": "test city 2",
+            "state": "test state 2",
+            "pincode": 520000
+        },
+        {
+            "firstname": "Test fname 3",
+            "lastname": "Test lname 3",
+            "phonenumber": 9492484369,
+            "addressline1": "address line 3 test",
+            "addressline2": "address line 3 test",
+            "city": "test city 3",
+            "state": "test state 3",
+            "pincode": 520000
+        }
+    ]
+}
+
+
+###
+
+GET http://localhost:3000/api/contact/628f1b171385eb90801b64b7
+
+
+###
+
+GET http://localhost:3000/api/contact?page=1&limit=3
+
+###
+
+GET http://localhost:3000/api/contact?page=1&limit=3&match={"firstname":"karthikeya"}
+
+###
+
+PUT http://localhost:3000/api/contact/62908b9ddebd7dfac4cdc748
+Content-Type: application/json
+
+{
+    "pincode": 520010
+}
+
+
+###
+
+DELETE http://localhost:3000/api/contact/62908b9ddebd7dfac4cdc749

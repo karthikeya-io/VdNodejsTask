@@ -1,0 +1,33 @@
+{
+  "name": "vdnodejstask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikeya-io/VdNodejsTask.git"
+  },
+  "author": "karthikeya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikeya-io/VdNodejsTask/issues"
+  },
+  "homepage": "https://github.com/karthikeya-io/VdNodejsTask#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-jwt": "^7.7.2",
+    "express-validator": "^6.14.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.4",
+    "nodemon": "^2.0.16",
+    "uuid": "^8.3.2"
+  }
+}
